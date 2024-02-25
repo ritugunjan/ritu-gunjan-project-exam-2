@@ -140,30 +140,68 @@ const VenueDetManager = () => {
       </div>
       <div className="lg:min-h-[83vh] flex flex-col lg:justify-around lg:w-1/2 lg:mb-0 mb-3">
         <div className="grid grid-cols-3 w-[80%] mx-auto">
-          <div className="font-bold">
+        <div className="font-bold">
             <p>Name</p>
-            <p>Address</p>
-            <p>City</p>
-            <p>Zip</p>
-            <p>Country</p>
-            <p>Continent</p>
-            <p>Description</p>
-            <p>Price</p>
-            <p>Venue Bookings</p>
           </div>
+          <div></div>
           <div>
-            
+          <p>{venue.name}</p>
           </div>
+          <div className="font-bold">
+          <p>Address</p>
+          </div>
+          <div></div>
           <div>
-            <p>{venue.name}</p>
-            <p>{venue.location.address}</p>
-            <p>{venue.location.city}</p>
-            <p>{venue.location.zip}</p>
-            <p>{venue.location.country}</p>
-            <p>{venue.location.continent}</p>
-            <p>{venue.description}</p>
-            <p>{venue.price}</p>
-           <p>
+          <p>{venue.location.address}</p>
+          </div>
+          <div className="font-bold">
+          <p>City</p>
+          </div>
+          <div></div>
+          <div>
+          <p>{venue.location.city}</p>
+          </div>
+          <div className="font-bold">
+          <p>Zip</p>
+          </div>
+          <div></div>
+          <div>
+          <p>{venue.location.zip}</p>
+          </div>
+          <div className="font-bold">
+          <p>Country</p>
+          </div>
+          <div></div>
+          <div>
+          <p>{venue.location.country}</p>
+          </div>
+          <div className="font-bold">
+          <p>Continent</p>
+          </div>
+          <div></div>
+          <div>
+          <p>{venue.location.continent}</p>
+          </div>
+          <div className="font-bold">
+          <p>Description</p>
+          </div>
+          <div></div>
+          <div className="break-words">
+          <p >{venue.description}</p>
+          </div>
+          <div className="font-bold">
+          <p>Price</p>
+          </div>
+          <div></div>
+          <div>
+          <p>{venue.price}</p>
+          </div>
+          <div className="font-bold">
+          <p>Venue Bookings</p>
+          </div>
+          <div></div>
+          <div>
+          <p>
            <Link
   to={`/venue-manager/bookings/overview/${venue.id}`}
   style={{ 

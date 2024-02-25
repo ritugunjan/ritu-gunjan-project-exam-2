@@ -24,12 +24,24 @@ import Footer from './components/common/Footer';
 const App = () => {
   
 
+  const navigate = useNavigate();
+
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
       setAuthToken(token);
     }
-  }, []);
+
+    const path = window.location.pathname;
+    const authRequiredPaths = ['/profile', '/dashboard', '/bookings', '/venue-manager/dashboard']; 
+    const auth = isAuthenticated();
+
+    if (!auth && authRequiredPaths.includes(path)) {
+      navigate('/login');
+    } else if (auth && (path === '/login' || path === '/register')) {
+      navigate('/');
+    }
+  }, [navigate]);
 
 
   

@@ -69,10 +69,7 @@ const EditProfile = () => {
      
       <form onSubmit={handleSubmit}>
         <div>
-          <label>
-            <input type="checkbox" checked={venueManager} onChange={(e) => setVenueManager(e.target.checked)} className='my-4' />
-            Update as Venue Manager 
-          </label>
+          
         </div>
         <div className='w-full'>
           <label className='w-full'>

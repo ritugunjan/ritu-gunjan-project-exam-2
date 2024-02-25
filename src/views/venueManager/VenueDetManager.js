@@ -164,15 +164,15 @@ const VenueDetManager = () => {
             <p>{venue.description}</p>
             <p>{venue.price}</p>
            <p>
-  <a 
-    href={`/venue-manager/bookings/overview/${venue.id}`}  
-    style={{ 
-      textDecoration: 'underline', 
-      color: 'blue', 
-    }}
-  >
-    Bookings
-  </a>
+           <Link
+  to={`/venue-manager/bookings/overview/${venue.id}`}
+  style={{ 
+    textDecoration: 'underline', 
+    color: 'blue', 
+  }}
+>
+  Bookings
+</Link>
 </p>
 
 

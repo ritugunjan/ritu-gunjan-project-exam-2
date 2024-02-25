@@ -18,7 +18,7 @@ Before you begin, ensure you have the following installed on your system:
 2. **Navigate to the root directory of the cloned repository:**
 
    ```bash
-   cd react-booking-website
+   cd ritu-gunjan-project-exam-2
 
 3. **Install Dependencies**
 
